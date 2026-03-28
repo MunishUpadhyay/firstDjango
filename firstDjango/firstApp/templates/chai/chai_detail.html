@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Chai Detail Page
+{% endblock %}
+
+{% block content %}
+<h1 class="bg-green-500 text-3xl">Chai Detail Page</h1>
+<div class="bg-orange-800 p-5 rounded m-4 shadow-lg
+flex flex-col items-center gap-4 w-[50%] mx-auto">
+
+    <h3>Name: {{ chai.name }}<h3>
+    <p>Description: {{ chai.description }}</p>
+    <p>Price: ${{ chai.price }}</p>
+</div>
+{% endblock %}
